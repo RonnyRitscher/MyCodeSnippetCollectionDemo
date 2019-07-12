@@ -15,8 +15,9 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <EditText
             android:id="@+id/et_borderwithlable"
@@ -24,21 +25,37 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:background="@drawable/shape_boarder_with_lable"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
             android:paddingLeft="15dp"
+            android:paddingTop="10dp"
             android:paddingRight="15dp"
-            android:text="InputText" />
+            android:paddingBottom="10dp"
+            android:text="InputText"
+            android:inputType="" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp"
             android:layout_marginTop="7dp"
             android:background="#ffffff"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
             android:text="Label" />
     </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="Border With Lable Example"
+        android:textSize="@dimen/text_activity_headline"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

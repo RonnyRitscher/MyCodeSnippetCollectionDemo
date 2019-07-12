@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="multichoiceList">
+        <item>"K-1"</item>
+        <item>"K-2"</item>
+        <item>"K-3"</item>
+        <item>"K-4"</item>
+        <item>"K-5"</item>
+    </array>
+
+
+</resources>
