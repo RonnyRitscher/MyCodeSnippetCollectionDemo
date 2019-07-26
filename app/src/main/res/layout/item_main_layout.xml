@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/shape_item_main_layout"
+    android:orientation="vertical">
+
+
+    <!-- Lyout des angezeigten Items  -->
+    <TextView
+        android:id="@+id/tv_main_item_demoName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="@dimen/text_main_item_recyclerview_name"
+        android:textStyle="bold"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/tv_main_item_demoClassName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/margin_main_item_recyclerview_description_top"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="@dimen/margin_main_item_recyclerview_description_bottom"
+        android:textSize="@dimen/text_main_item_recyclerview_description"
+        android:visibility="gone"
+        tools:text="ClassName" />
+
+    <TextView
+        android:id="@+id/tv_main_item_demoDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/margin_main_item_recyclerview_description_top"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="@dimen/margin_main_item_recyclerview_description_bottom"
+        android:textSize="@dimen/text_main_item_recyclerview_description"
+        tools:text="Beschreibung" />
+
+    <!--<android.support.constraint.Guideline-->
+    <!--android:id="@+id/guideline"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+
+</LinearLayout>

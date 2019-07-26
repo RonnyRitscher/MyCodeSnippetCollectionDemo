@@ -1,4 +1,4 @@
-package de.ritscherappdeveloper.projekt_codesnippetcollectionapp;
+package de.ronnyritscher.projekt_codesnippetcollectionapp;
 
 import android.app.DatePickerDialog;
 import android.graphics.Color;
@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 import java.util.Calendar;
 
-public class DatePickerActivity extends AppCompatActivity {
+public class DatePickerDemoActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
     private TextView tv_datePicker_result;
@@ -39,7 +39,7 @@ public class DatePickerActivity extends AppCompatActivity {
                 int day = cal.get(Calendar.DAY_OF_MONTH);
 
                 DatePickerDialog datePickerDialog = new DatePickerDialog(
-                        DatePickerActivity.this,
+                        DatePickerDemoActivity.this,
                         android.R.style.Theme_Holo_Light_Dialog_MinWidth,
                         mDateSetListener,
                         year,month,day);

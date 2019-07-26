@@ -1,4 +1,4 @@
-package de.ritscherappdeveloper.projekt_codesnippetcollectionapp;
+package de.ronnyritscher.projekt_codesnippetcollectionapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.os.Bundle;
  * 3.
  */
 
-public class BorderWithLableActivity extends AppCompatActivity {
+public class BorderWithLableDemoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

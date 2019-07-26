@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="text_activity_headline">30sp</dimen>
+    <dimen name="text_main_item_recyclerview_name">18sp</dimen>
+    <dimen name="text_main_item_recyclerview_description">14sp</dimen>
+
+    <dimen name="margin_main_item_recyclerview_description_top">5dp</dimen>
+    <dimen name="margin_main_item_recyclerview_description_bottom">16dp</dimen>
 </resources>

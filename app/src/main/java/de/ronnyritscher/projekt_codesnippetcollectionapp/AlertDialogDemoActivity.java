@@ -1,4 +1,4 @@
-package de.ritscherappdeveloper.projekt_codesnippetcollectionapp;
+package de.ronnyritscher.projekt_codesnippetcollectionapp;
 
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
@@ -12,9 +12,9 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class AlertDialogActivity extends AppCompatActivity {
+public class AlertDialogDemoActivity extends AppCompatActivity {
 
-    private static final String TAG = AlertDialogActivity.class.getSimpleName();
+    private static final String TAG = AlertDialogDemoActivity.class.getSimpleName();
 
     //MEMBER of SIMPLE-CHOICE
     private Button btn_alertDialog_simpleChoice;
@@ -81,14 +81,14 @@ public class AlertDialogActivity extends AppCompatActivity {
     //**********************************************************************************************************
     private void openAlertDialog_simpleChoice() {
 
-        AlertDialog.Builder dialogSimpleChoice = new AlertDialog.Builder(AlertDialogActivity.this);
+        AlertDialog.Builder dialogSimpleChoice = new AlertDialog.Builder(AlertDialogDemoActivity.this);
         dialogSimpleChoice.setTitle("Simple Dialog");
         dialogSimpleChoice.setMessage("Hier kann eine Information zur Kenntnisnahme oder ein Fehlerzustand angegeben werden... Bitte Akzeptieren!");
         dialogSimpleChoice.setPositiveButton("Bestätigen", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 //Hier kann weiterer Code eingebaut werden
-                Toast.makeText(AlertDialogActivity.this, "Bestätigt!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(AlertDialogDemoActivity.this, "Bestätigt!", Toast.LENGTH_SHORT).show();
                 tv_alertDialog_simpleChoice_result.setText("Bestätigt!");
                 dialog.dismiss();
             }
@@ -97,7 +97,7 @@ public class AlertDialogActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 //Abbruch des AlertDialogs
-                Toast.makeText(AlertDialogActivity.this, "Nicht bestätigt!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(AlertDialogDemoActivity.this, "Nicht bestätigt!", Toast.LENGTH_SHORT).show();
                 tv_alertDialog_simpleChoice_result.setText("Nicht bestätigt!");
                 dialog.dismiss();
             }
@@ -106,7 +106,7 @@ public class AlertDialogActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                //Abbruch des AlertDialogs
-                Toast.makeText(AlertDialogActivity.this, "Abbruch!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(AlertDialogDemoActivity.this, "Abbruch!", Toast.LENGTH_SHORT).show();
                 tv_alertDialog_simpleChoice_result.setText("Keine Angabe!");
                 dialog.dismiss();
             }
@@ -120,7 +120,7 @@ public class AlertDialogActivity extends AppCompatActivity {
         final CharSequence[] zahlenArray = {"0", "1", "2", "3"};
 
         //Erstellen eines AlertDialogs über den Builder
-        AlertDialog.Builder dialogSingleChoice = new AlertDialog.Builder(AlertDialogActivity.this );
+        AlertDialog.Builder dialogSingleChoice = new AlertDialog.Builder(AlertDialogDemoActivity.this );
 
         //Title
         dialogSingleChoice.setTitle("Single Choice!");
@@ -147,7 +147,7 @@ public class AlertDialogActivity extends AppCompatActivity {
         dialogSingleChoice.setNegativeButton("Abbruch", new DialogInterface.OnClickListener() {   //NEGATIVER BUTTON
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(AlertDialogActivity.this, "Nein", Toast.LENGTH_SHORT).show();
+                Toast.makeText(AlertDialogDemoActivity.this, "Nein", Toast.LENGTH_SHORT).show();
                 dialog.dismiss();
             }
         });
@@ -162,7 +162,7 @@ public class AlertDialogActivity extends AppCompatActivity {
 
 
 
-        AlertDialog.Builder dialogMultiChoice = new AlertDialog.Builder(AlertDialogActivity.this);
+        AlertDialog.Builder dialogMultiChoice = new AlertDialog.Builder(AlertDialogDemoActivity.this);
 
         dialogMultiChoice.setTitle("Bsp: Wähle eine oder mehrere Kategorie(n) aus:");
         dialogMultiChoice.setMultiChoiceItems(categoryListItems, categoryCheckedItems, new DialogInterface.OnMultiChoiceClickListener() {

@@ -1,4 +1,4 @@
-package de.ritscherappdeveloper.projekt_codesnippetcollectionapp;
+package de.ronnyritscher.projekt_codesnippetcollectionapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

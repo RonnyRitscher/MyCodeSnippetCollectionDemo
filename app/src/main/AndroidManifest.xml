@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="de.ritscherappdeveloper.projekt_codesnippetcollectionapp">
+    package="de.ronnyritscher.projekt_codesnippetcollectionapp">
 
     <application
         android:allowBackup="true"
@@ -9,11 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RecyclerViewActivity"></activity>
-        <activity android:name=".ProgressBarActivity" />
-        <activity android:name=".DatePickerActivity" />
-        <activity android:name=".AlertDialogActivity" />
-        <activity android:name=".BorderWithLableActivity" />
+        <activity android:name=".SnackbarDemoActivity" />
+        <activity android:name=".RecyclerViewDemoActivity" />
+        <activity android:name=".ProgressBarDemoActivity" />
+        <activity android:name=".DatePickerDemoActivity" />
+        <activity android:name=".AlertDialogDemoActivity" />
+        <activity android:name=".BorderWithLableDemoActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

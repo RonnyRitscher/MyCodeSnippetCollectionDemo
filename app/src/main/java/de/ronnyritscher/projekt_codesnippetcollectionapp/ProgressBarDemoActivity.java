@@ -1,4 +1,4 @@
-package de.ritscherappdeveloper.projekt_codesnippetcollectionapp;
+package de.ronnyritscher.projekt_codesnippetcollectionapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,9 +8,9 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-public class ProgressBarActivity extends AppCompatActivity implements View.OnClickListener {
+public class ProgressBarDemoActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private static final String TAG = ProgressBarActivity.class.getSimpleName();
+    private static final String TAG = ProgressBarDemoActivity.class.getSimpleName();
 
     private Button btnProgressBarRound , btn_progressbar_horizontalExample_decrease, btn_progressbar_horizontalExample_increase;
     private TextView tv_progressBar_simpleExample_result, tv_progressBar_horizontalExample_result;
